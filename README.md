@@ -4,11 +4,13 @@ You are to assume that the system caters for only to a single user type, in this
 owners’).
 
 The functions of the user type ‘caravan owners’ are given below:
+
   • A user should be able to register with the system by filling up a registration form.
   • A user should be able to login to the system by providing a combination of username and password,
   which was setup by the user during registration.
 
 Once logged in a user should land to welcome page and be able to;
+
   o Add details of a caravan to the system by completing an add caravan details form.
   o View the list caravans added by the user to the system.
   o Edit the details of a particular caravan.
