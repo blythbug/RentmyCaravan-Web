@@ -1,7 +1,6 @@
 # Assignment Brief
 
-## You are to assume that the system caters for only to a single user type, in this case ‘caravan
-owners’).
+## You are to assume that the system caters for only to a single user type, in this case ‘caravan owners'
 
 ### The functions of the user type ‘caravan owners’ are given below:
 
