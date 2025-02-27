@@ -1,4 +1,4 @@
-Assignment Brief:
+# Assignment Brief
 
 You are to assume that the system caters for only to a single user type, in this case ‘caravan
 owners’).
@@ -14,7 +14,7 @@ Once logged in a user should land to welcome page and be able to;
   o Edit the details of a particular caravan.
   o Delete a caravan from the system.
   
-#CLIENT SIDE CHECKLIST
+# CLIENT SIDE CHECKLIST
 
 [] A welcome page with the option to login to the system for registered users, and a link to a
 registration page to allow new user registration.
@@ -44,7 +44,7 @@ list view) and get detailed descriptions, images or videos available for the car
 [] About page. About page should give a description of the website, and a description of the
 developer
 
-#SERVER SIDE CHECKLIST
+# SERVER SIDE CHECKLIST
 
 [] Functionality to perform user registration. The information gathered from the registration page
 should be verified, checked for errors and saved in the “users” table in the MySQL database.
