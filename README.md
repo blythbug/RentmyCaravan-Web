@@ -21,7 +21,7 @@
   
 # CLIENT SIDE CHECKLIST
 
-[] A welcome page with the option to login to the system for registered users, and a link to a
+[X] A welcome page with the option to login to the system for registered users, and a link to a
 registration page to allow new user registration.
 a. You may design this to display the latest caravans posted by the users to make the
 welcome page attractive.
