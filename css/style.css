@@ -228,6 +228,7 @@ img {
     color: var(--first-colour);
 }
 
+.home-button { text-align: center;
 }
 
 .home-img img { /* Login Button background */
