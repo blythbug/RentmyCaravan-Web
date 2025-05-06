@@ -357,25 +357,13 @@ img {
         align-self: flex-end;
     }
 
-    .home-social {
-        padding-top: 0;
-        padding-bottom: 2.5rem;
-        flex-direction: row;
-        align-self: flex-end;
-    }
-
-    .home-social-icon {
-        margin-bottom: 0;
-        margin-right: var(--mb4);
-    }
-
     .home-img {
         width: 457px;
         height: 475px;
         bottom: 15%;
     }
 
-    .about-container, .skills-container {
+    .about-container {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         text-align: initial;
