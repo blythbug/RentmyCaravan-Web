@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 12, 2025 at 02:27 PM
+-- Generation Time: May 12, 2025 at 03:48 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `bookings` (
   `bookingID` int(11) NOT NULL,
   `caravanID` int(11) NOT NULL,
-  `renter` varchar(128) NOT NULL,
+  `userID` varchar(128) NOT NULL,
   `bookingstart` date NOT NULL,
   `bookingend` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -43,7 +43,7 @@ CREATE TABLE `bookings` (
 
 CREATE TABLE `caravans` (
   `caravanID` int(11) NOT NULL,
-  `owner` int(11) NOT NULL,
+  `userID` int(11) NOT NULL,
   `model` varchar(128) NOT NULL,
   `registration` varchar(7) NOT NULL,
   `kitchen` tinyint(1) NOT NULL,
@@ -56,11 +56,22 @@ CREATE TABLE `caravans` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `caravan_images`
+--
+
+CREATE TABLE `caravan_images` (
+  `caravanID` int(11) NOT NULL,
+  `imageID` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
-  `ID_user` int(11) NOT NULL,
+  `userID` int(11) NOT NULL,
   `username` varchar(128) NOT NULL,
   `email` varchar(128) NOT NULL,
   `password` varchar(128) NOT NULL,
@@ -73,7 +84,7 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`ID_user`, `username`, `email`, `password`, `name`, `birthday`, `admin`) VALUES
+INSERT INTO `users` (`userID`, `username`, `email`, `password`, `name`, `birthday`, `admin`) VALUES
 (4, '', 'thisisanemail@gmail.com', '$2y$10$0umNrBoiCK3.XG17GBT8JODIvyL3Yp15cxYSM.YK7T4DMk7XdAeFG', 'Taylor Rees', '2005-05-05', 0);
 
 --
@@ -92,13 +103,19 @@ ALTER TABLE `bookings`
 ALTER TABLE `caravans`
   ADD PRIMARY KEY (`caravanID`),
   ADD UNIQUE KEY `registration_index` (`registration`),
-  ADD UNIQUE KEY `owner` (`owner`);
+  ADD UNIQUE KEY `owner` (`userID`);
+
+--
+-- Indexes for table `caravan_images`
+--
+ALTER TABLE `caravan_images`
+  ADD PRIMARY KEY (`caravanID`);
 
 --
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`ID_user`),
+  ADD PRIMARY KEY (`userID`),
   ADD UNIQUE KEY `username_index` (`username`),
   ADD UNIQUE KEY `email_index` (`email`);
 
@@ -122,7 +139,7 @@ ALTER TABLE `caravans`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
