@@ -421,7 +421,7 @@ img {
 }
 
 .login-entries {
-    background: #eeeeee;
+    background: #cdcdcd;
     padding: 2.5rem;
     border-radius: 1rem;
     width: 100%;
@@ -476,13 +476,13 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-	min-height: 50rem;
+	min-height: 55rem;
 	height: 100%;
     padding: 2rem;
 }
 
 .registration-entries {
-    background: #eeeeee;
+    background: #cdcdcd;
     padding: 2.5rem;
     border-radius: 1rem;
     width: 100%;
@@ -510,3 +510,4 @@ img {
     font-size: 1rem;
 	border-radius: 0.5rem;
 	border: none;
+}

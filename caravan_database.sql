@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 06, 2025 at 10:25 AM
+-- Generation Time: May 12, 2025 at 02:27 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -53,13 +53,6 @@ CREATE TABLE `caravans` (
   `available_end` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `caravans`
---
-
-INSERT INTO `caravans` (`caravanID`, `owner`, `model`, `registration`, `kitchen`, `toilet`, `rental_cost`, `available_start`, `available_end`) VALUES
-(1, 2, 'Capsule Mini R', 'JA12 CR', 1, 1, 35.50, '2025-06-11', '2025-07-31');
-
 -- --------------------------------------------------------
 
 --
@@ -70,6 +63,7 @@ CREATE TABLE `users` (
   `ID_user` int(11) NOT NULL,
   `username` varchar(128) NOT NULL,
   `email` varchar(128) NOT NULL,
+  `password` varchar(128) NOT NULL,
   `name` varchar(128) NOT NULL,
   `birthday` date NOT NULL,
   `admin` tinyint(1) NOT NULL DEFAULT 0
@@ -79,9 +73,8 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`ID_user`, `username`, `email`, `name`, `birthday`, `admin`) VALUES
-(1, 'TTC', 'st20296327@outlook.cardiffmet.ac.uk', 'Matthew Jones', '2006-05-09', 1),
-(2, 'JaneDoe2741', 'blankemail@gmail.com', 'Jane Doe', '1995-02-15', 0);
+INSERT INTO `users` (`ID_user`, `username`, `email`, `password`, `name`, `birthday`, `admin`) VALUES
+(4, '', 'thisisanemail@gmail.com', '$2y$10$0umNrBoiCK3.XG17GBT8JODIvyL3Yp15cxYSM.YK7T4DMk7XdAeFG', 'Taylor Rees', '2005-05-05', 0);
 
 --
 -- Indexes for dumped tables
@@ -129,7 +122,7 @@ ALTER TABLE `caravans`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
