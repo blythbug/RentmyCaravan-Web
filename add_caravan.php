@@ -46,9 +46,11 @@
 	<div class="registration-entries">
     
 		<h2>Register a new Caravan</h2>
-			<form action="registration_code.php" method="post">
+			<form action="add_caravan_code.php" method="post">
         
 			<input type="text" name="model" placeholder="Model" required>
+
+            <input type="text" name="registration" placeholder="Registration Number" required>
         
 			<input type="text" name="rental_cost" placeholder="Rental Cost" required>
         
