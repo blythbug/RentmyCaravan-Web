@@ -32,9 +32,9 @@ The registration form should contain appropriate client-side validations using J
 to the structure of the ‘users’ table given below to extract the details required for the user
 registration form.
 
-[] Add caravan page; The caravan owners should be able to add the details of a caravan to the
+~[] Add caravan page; The caravan owners should be able to add the details of a caravan to the
 system. You should refer to the structure of the ‘caravan_details’ table given below to identify the
-details required for the caravan details form. The caravan details must include images and may
+details required for the caravan details form.~ The caravan details must include images and may
 contain any other multimedia elements such as video clips etc.
 
 [] Caravan list view page; to view all previously uploaded caravans.
