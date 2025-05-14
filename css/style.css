@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 /* Sliding Images Gallery */
 
 .slider-inner {
@@ -26,7 +25,6 @@
     background-size: cover;
     background-position: center;
     &.slider-image-two
-
 {
     flex-basis: 30%;
 }
@@ -42,7 +40,6 @@
         transform: translateX(-100%);
     }
 }
-
 
 /* Index page formatting */
 /* This makes it easier to keep consistency throughout the page and change simple aspects easily */
@@ -81,15 +78,23 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: var(--header-height) 0 0 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--second-colour);
+}
+
+.page-wrapper {
+    flex: 1 0 auto;
 }
 
 h1, h2, p {
@@ -253,7 +258,6 @@ img {
 
 /*ABOUT*/
 
-
 .about-subtitle { text-align: center; }
 .about-text { 
   padding: 40px 0;
@@ -284,11 +288,12 @@ img {
 /*FOOTER*/
 
 .footer {
-    background-color: var(--second-colour);
-    color: #ffffff;
+    flex-shrink: 0;
+    background-color: #333; /* Adjust as needed */
+    color: #fff; /* Adjust as needed */
+    padding: 20px 0;
     text-align: center;
     font-weight: var(--font-semi);
-    padding: 2rem 0;
 }
 
 .footer-title {

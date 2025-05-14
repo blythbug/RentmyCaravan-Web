@@ -13,28 +13,34 @@
  <!-- Navigation bar / nav in css file -->
   
 <body>
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav-logo">Rent my Caravan   <i class='bx bxs-truck' ></i></a>
-            </div>
+    <div class="page-wrapper">
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav-logo">Rent my Caravan   <i class='bx bxs-truck' ></i></a>
+                </div>
 
-            <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Register</a></li>
-                    <li class="nav-item"><a href="/login.html" class="nav-link">Login</a></li>
-                  <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
-                </ul>
-            </div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Register</a></li>
+                        <li class="nav-item"><a href="/login.html" class="nav-link">Login</a></li>
+                      <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </div>
 
-            <div class="nav-toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
 
-        </nav>
-    </header>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <!-- Add your main content here -->
+        </main>
+    </div>
   
   
  
@@ -56,7 +62,7 @@
   
   
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
+    <script src=js.script.js"></script>
   
   
   
