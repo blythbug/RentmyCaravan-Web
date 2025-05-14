@@ -14,7 +14,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav-logo">Rent my Caravan   <i class='bx bxs-truck'></i></a>  <!-- Website name -->
+                <a href="index.php#home" class="nav-logo">Rent my Caravan   <i class='bx bxs-truck'></i></a>  <!-- Website name -->
             </div>
 
             <!-- Navigation bar options -->
@@ -85,27 +85,21 @@
 		const urlParams = new URLSearchParams(window.location.search); //reads the URL and gets the error
 		const error = urlParams.get('status');
 		//all available popup error messages
-		if (status == 'e0'){
+		if (error == 'e0'){
 			alert('Registration Successful, Please Log In');
 		}else if (error == 'e1'){
 			alert('Incorrect Credentials');
 		}else if (error == 'e2'){
 			alert('User Does Not Exist');
+		}else if (error == 'e20'){
+			alert('userId not found');
+		}else if (error == 'e21'){
+			alert('key not found');
 		}else if (error == 'e404'){
 			alert('Fatal unknown error has occured');		
 		}
 	}
-	
-	
-	const loginButton = document.getElementById('loginBtn');
-    if (loginButton) {
-        loginButton.addEventListener('click', function () {
-            console.log('Login button was clicked');
-            // You can also show an alert:
-            // alert("Login button clicked!");
-        });
-    }
-};
+
 </script>
-</script>
+
 

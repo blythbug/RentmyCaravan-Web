@@ -16,7 +16,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav-logo">Rent my Caravan   <i class='bx bxs-truck'></i></a>  <!-- Website name -->
+                <a href="index.php#home" class="nav-logo">Rent my Caravan   <i class='bx bxs-truck'></i></a>  <!-- Website name -->
             </div>
 
             <!-- Navigation bar options -->
@@ -48,7 +48,7 @@
                 <h1 class = "home-title">Renting Made <span class="home-title-color">Simple</span></h1>
           </div>
             <div class = "home-button">
-               <a href="#" class="button">Let's go!</a>
+               <a href="login.php" class="button">Let's go!</a>
           </div>
 
 <!-- Sliding Images Gallery -->
@@ -122,7 +122,7 @@
 
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="js/script.js"></script>
+    <script src="main.js"></script>
 
 
 

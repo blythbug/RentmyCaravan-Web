@@ -4,7 +4,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "caravan_database";
+$dbname = "caravan_rental";
 
 //start connection to the caravan_rental database
 $connection = new mysqli($servername, $username, $password, $dbname);
@@ -13,15 +13,15 @@ if ($connection->connect_error) {
 }
 
 //put entries into variables to be added to an sql statement
-$firstname = $_POST['firstname'] ?? '';
-$surname = $_POST['surname'] ?? '';
+$firstname = $_POST['firstname'];
+$surname = $_POST['surname'];
 $name = $firstname . ' ' . $surname;
-$email = $_POST['email'] ?? '';
-$username = $_POST['username'] ?? '';
-$password = $_POST['password'] ?? '';
-$checkpassword = $_POST['checkpassword'] ?? '';
+$email = $_POST['email'];
+$username = $_POST['username'];
+$password = $_POST['password'];
+$checkpassword = $_POST['checkpassword'];
 $password_encrypted = password_hash($password, PASSWORD_DEFAULT);
-$dob = $_POST['dob'] ?? '';
+$dob = $_POST['dob'];
 $tempdate = new DateTime($dob);
 $curentdate = new DateTime();
 $age = $curentdate->diff($tempdate)->y;

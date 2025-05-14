@@ -411,6 +411,12 @@ img {
 }
 
 
+:root {
+  --first-colour: #4d5d53;
+}
+
+
+
 .login-section {
     display: flex;
     justify-content: center;
@@ -512,4 +518,393 @@ img {
     font-size: 1rem;
 	border-radius: 0.5rem;
 	border: none;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.caravan-details-section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  margin-top: 100px;
+}
+
+.caravan-card-box {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+}
+
+.caravan-details-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.main-image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.caravan-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Book Now Button */
+.book-now-container {
+  margin-top: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.book-now-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--first-colour);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+  width: 100%;
+  text-align: center;
+}
+
+.book-now-button:hover {
+  background-color: #394840;
+}
+
+/* =========================
+   Carousel - Caravan Details
+========================= */
+.caravan-details-section .carousel-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 700px;
+  margin: 2rem auto 0;
+}
+
+.caravan-details-section .carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  gap: 1rem;
+}
+
+.caravan-details-section .carousel-item {
+  flex: 0 0 auto;
+  width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.caravan-details-section .carousel-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.caravan-details-section .carousel-no-image {
+  width: 100%;
+  height: 140px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  border-radius: 8px;
+}
+
+.caravan-details-section .carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--first-colour);
+  z-index: 1;
+}
+
+.caravan-details-section .carousel-button.prev {
+  left: 5px;
+}
+
+.caravan-details-section .carousel-button.next {
+  right: 10px;
+}
+
+.caravan-details-section .carousel-button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+/* Consistent Text Styling */
+.carousel-item a,
+.carousel-item a * {
+  color: var(--first-colour) !important;
+  text-decoration: none !important;
+}
+
+.homepage-carousel-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: auto;
+}
+
+.homepage-carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.homepage-carousel-item {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-right: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.homepage-carousel-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.homepage-carousel-no-image {
+  width: 100%;
+  height: 200px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+}
+
+.homepage-carousel-content {
+  padding: 1rem;
+}
+
+.homepage-carousel-price {
+  color: var(--first-colour);
+  font-weight: bold;
+}
+
+.homepage-carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+  color: var(--first-colour);
+}
+
+.homepage-carousel-button.prev {
+  left: 5px;
+}
+
+.homepage-carousel-button.next {
+  right: 15px;
+}
+
+.homepage-carousel-button:hover {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+/* Consistent Text Styling */
+.homepage-carousel-item a,
+.homepage-carousel-item a * {
+  color: var(--first-colour) !important;
+  text-decoration: none !important;
+}
+
+/* =========================
+   Modal + Booking Feedback
+========================= */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal-content label {
+  font-weight: bold;
+}
+
+.modal-content input,
+.modal-content button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.booking-success {
+  background-color: #e0ffe0;
+  color: #2b7a2b;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.booking-errors {
+  background-color: #ffe0e0;
+  color: #8a1f1f;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #000;
+}
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Ensure image maintains aspect ratio */
+  border-radius: 10px;
+}
+.add-caravan-button-container {
+  text-align: center; /* Center the button */
+  margin-top: 2rem;
+}
+
+.add-caravan-button {
+  background-color: #4d5d53; /* Green background */
+  color: white;
+  padding: 12px 24px; /* Larger padding */
+  font-size: 16px; /* Larger font */
+  font-weight: bold;
+  border-radius: 6px; /* Rounded corners */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.add-caravan-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-3px); /* Lift button up slightly on hover */
+}
+
+.add-caravan-button:focus {
+  outline: none; /* Remove the focus outline */
+}
+
+.add-caravan-button:active {
+  transform: translateY(1px); /* Button presses down on click */
+}
+
+#add-new-caravan .section-title {
+  font-size: 24px; /* Same size as Available Caravans */
+  font-weight: bold; /* Bold for emphasis */
+  margin-bottom: 20px; /* Space below the heading */
+  text-align: center; /* Centered like Available Caravans */
+  color: #333; /* Dark color for readability */
+}
+.caravan-details-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.caravan-details-container img.caravan-detail-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
