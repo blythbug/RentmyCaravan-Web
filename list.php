@@ -36,11 +36,93 @@
 
             </nav>
         </header>
+        
 
+<!-- List Grid View -->
+      
         <main class="main-content">
-            <!-- Add your main content here -->
+            <div class="main">
+  <h1>Responsive Card Grid Layout</h1>
+  <ul class="cards">
+    
+    
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://images.unsplash.com/photo-1563783850023-077d97825802?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+        <div class="card_content">
+          <h2 class="card_title">Caravan Title</h2>
+          <p class="card_text">Caravan Description to be pulled from Database</p>
+          <button class="btn card_btn">Rent</button>
+        </div>
+      </div>
+    </li>
+    
+    
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://images.unsplash.com/photo-1563783850023-077d97825802?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+        <div class="card_content">
+          <h2 class="card_title">Caravan Title</h2>
+          <p class="card_text">Caravan Description to be pulled from Database</p>
+          <button class="btn card_btn">Rent</button>
+        </div>
+      </div>
+    </li>
+    
+    
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://images.unsplash.com/photo-1563783850023-077d97825802?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+        <div class="card_content">
+          <h2 class="card_title">Caravan Title</h2>
+          <p class="card_text">Caravan Description to be pulled from Database</p>
+          <button class="btn card_btn">Rent</button>
+        </div>
+      </div>
+    </li>
+    
+    
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://images.unsplash.com/photo-1563783850023-077d97825802?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+        <div class="card_content">
+          <h2 class="card_title">Caravan Title</h2>
+          <p class="card_text">Caravan Description to be pulled from Databaset</p>
+          <button class="btn card_btn">Rent</button>
+        </div>
+      </div>
+    </li>
+    
+    
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://images.unsplash.com/photo-1563783850023-077d97825802?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+        <div class="card_content">
+          <h2 class="card_title">Caravan Title</h2>
+          <p class="card_text">Caravan Description to be pulled from Database</p>
+          <button class="btn card_btn">Rent</button>
+        </div>
+      </div>
+    </li>
+    
+    
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://images.unsplash.com/photo-1563783850023-077d97825802?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></div>
+        <div class="card_content">
+          <h2 class="card_title">Caravan Title</h2>
+          <p class="card_text">Caravan Description to be pulled from Database</p>
+          <button class="btn card_btn">Rent</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
         </main>
     </div>
+  
+ 
   
   
  
