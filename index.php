@@ -122,7 +122,7 @@
 
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
+    <script src="js/script.js"></script>
 
 
 
