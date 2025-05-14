@@ -22,9 +22,10 @@
             <!-- Navigation bar options -->
             <div class="nav-menu" id="nav-menu"> 
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="index.php" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="index.php#about" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="login.php" class="nav-link">Log in</a></li>
+                    <li class="nav-item"><a href="index.php#contact" class="nav-link">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -38,6 +39,7 @@
     </header>
 	
 	
+
 <!-- registration entry boxes -->
  <main class="registration-section">
 	<div class="registration-entries">
@@ -56,42 +58,6 @@
 	</div>
  </main>
  
-<!-- core popup box -->
-    <div id="reg_popup" class="reg_popup">
-        <h2 id="reg_popup-message"></h2>
-        <button class="close-btn" onclick="closePopup()">Close</button>
-    </div>
-
-    <div id="overlay" class="overlay"></div>
-
-    <script>
-        // Function to display the popup based on URL query parameter
-        window.onload = function () {
-            const params = new URLSearchParams(window.location.search);
-            const status = params.get('status');
-
-            if (status === 'success') {
-                document.getElementById('popup-message').innerText = "Registration successful! Redirecting to login page...";
-                document.getElementById('popup').style.display = 'block';
-                document.getElementById('overlay').style.display = 'block';
-                setTimeout(() => {
-                    window.location.href = 'login.php'; // Redirect to login page after 3 seconds
-                }, 3000);
-            } else if (status === 'error') {
-                document.getElementById('popup-message').innerText = "Registration failed! Please try again.";
-                document.getElementById('popup').style.display = 'block';
-                document.getElementById('overlay').style.display = 'block';
-            }
-        }
-
-        // Function to close the popup box
-        function closePopup() {
-            document.getElementById('popup').style.display = 'none';
-            document.getElementById('overlay').style.display = 'none';
-        }
-    </script>
-
-
 
 <!-- Website Footer -->
     <footer class="footer">
@@ -115,3 +81,33 @@
 
 </body>
 </html>
+
+<!-- JAVA SCRIP SECTION -->
+
+<script>
+
+	// go to resitration_code to see list of error codes
+	window.onload = function() {
+		const parameteres = new URLSearchParams(window.location.search); //reads the URL and gets the error
+		const error = parameteres.get('status');
+		//all available popup error messages
+		if (error == 'e0'){
+			window.location.href = 'http://localhost/caravan_rental/login.php?status=pass';
+		} else if (error == 'e15'){
+			alert('Passwords do not match, Please Retry');
+		}else if (error == 'e16'){
+			alert('Please enter your real date of birth');
+		}else if (error == 'e17'){
+			alert('You must be 18+ to use this site');		
+		}else if (error == 'e404'){
+			alert('Fatal unknown error has occured');		
+		}else if (error == 'e1101'){
+			alert('email is an invalid email');		
+		}else if (error == 'e1062'){
+			alert('User/Email Already in use');	
+		}else if (error == 'e1406'){
+			alert('Exceeds Character Limit');	
+		}
+	}
+</script>
+

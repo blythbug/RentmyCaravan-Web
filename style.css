@@ -415,9 +415,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-	min-height: 40rem;
+	min-height: 50rem;
 	height: 100%;
     padding: 2rem;
+	position: relative;
+    bottom: 0;
 }
 
 .login-entries {
