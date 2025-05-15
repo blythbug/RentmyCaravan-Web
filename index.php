@@ -95,13 +95,13 @@ At RentmyCaravan, we believe in making travel more flexible, affordable, and acc
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact-container bd-grid">
-                    <form action="" class="contact-form">
-                        <input type="text" placeholder="Name" class="contact-input">
-                        <input type="email" placeholder="Email" class="contact-input">
+                    <form action="contact_process.php" method="POST" class="contact-form">
+                        <input type="text" id="name" name="fullName" placeholder="Name" class="contact-input" required>
+                        <input type="email" id="email" name = "email" placeholder="Email" class="contact-input"  required>
                         <!-- Make text area for message adjustable-->
-                        <textarea name="" id="" cols="0" rows="10" class="contact-input"></textarea>
+                        <textarea name="message" id="message" placeholder="Your Message" cols="0" rows="10" class="contact-input"></textarea>
 
-                        <input type="button" value="Send" class="contact-button button">
+                        <input type="submit" value="Send" class="contact-button button">
                     </form>
                 </div>
             </section>
