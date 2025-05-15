@@ -117,7 +117,7 @@ At RentmyCaravan, we believe in making travel more flexible, affordable, and acc
             <i class='bx bxs-truck'></i></a>
         </div>
 
-        <p>&#169; Something about Copyright here</p>
+        <p>&#169; All Rights Reserved</p>
         <p>Images from Unsplash</p>
     </footer>
 
