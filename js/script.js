@@ -42,3 +42,36 @@ sr.reveal('.about-subtitle', {delay: 200} )
 sr.reveal('.about-text', {delay: 400} )
 
 sr.reveal('.contact-input', {interval: 200} )
+
+
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    fetch('contact_process.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        const container = document.querySelector('.contact-container');
+        const existingResponse = document.querySelector('.form-response');
+        if (existingResponse) existingResponse.remove();
+
+        const message = document.createElement('div');
+        message.className = 'form-response';
+        message.innerHTML = data;
+        container.appendChild(message);
+
+        // Optionally clear form
+        if (data.includes('Thanks for contacting us')) {
+            form.reset();
+        }
+    })
+    .catch(error => {
+        console.error('Error submitting form:', error);
+    });
+});
+
