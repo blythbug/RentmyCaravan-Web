@@ -80,8 +80,11 @@
             <h2 class="section-title">About</h2>
                 <div>
                     <h2 class="about-subtitle">Filler Subtitle</h2>
-                    <p class="about-text">filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler
- filler filler filler filler filler filler filler filler filler filler filler filler</p>
+                    <p class="about-text">RentmyCaravan is your go-to platform for hassle-free caravan rentals. Whether you're planning a weekend escape, a long road trip, or simply want to try something new, we make it easy to find the perfect caravan for your adventure.
+
+But we’re not just for travelers — if you own a caravan, you can list it on our platform and earn by sharing it with others. We connect caravan owners with renters in a secure, user-friendly space designed to make the process simple and rewarding for everyone.
+
+At RentmyCaravan, we believe in making travel more flexible, affordable, and accessible — all while helping owners make the most of their vehicles. Start your journey with us today.</p>
                 </div>
             </div>
 
